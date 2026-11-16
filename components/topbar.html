@@ -1,0 +1,46 @@
+<div class="topbar-header px-4 d-flex align-items-center justify-content-between">
+  <!-- Left Side: Toggle & Store Identity -->
+  <div class="d-flex align-items-center gap-3">
+    <button class="btn btn-circle d-md-none" onclick="toggleSidebar()" aria-label="Toggle Sidebar">
+      <i data-lucide="menu"></i>
+    </button>
+    
+    <!-- Store Title -->
+    <div>
+      <span id="topbar-warung-name" class="fw-semibold text-dark font-sm">Warung Suka Maju</span>
+    </div>
+  </div>
+
+  <!-- Right Side: Notifications & User Dropdown -->
+  <div class="d-flex align-items-center gap-2">
+
+    <!-- Notification Dropdown Menu -->
+    <div class="dropdown">
+      <button class="btn btn-circle position-relative" data-bs-toggle="dropdown" aria-expanded="false" title="Pusat Notifikasi">
+        <i data-lucide="bell" class="icon-xl"></i>
+      </button>
+      <div class="dropdown-menu dropdown-menu-end shadow border-0 rounded-3 mt-2 p-0 notif-dropdown-menu">
+        <!-- Header -->
+        <div class="p-3 border-bottom d-flex align-items-center justify-content-between bg-white rounded-top-3">
+          <h6 class="fw-bold text-dark mb-0 font-sm">Notifikasi</h6>
+        </div>
+
+        <!-- Notification List -->
+        <div class="notif-list-body" style="max-height: 280px; overflow-y: auto;">
+          <!-- Empty state: belum ada sistem notifikasi real-time -->
+          <div class="d-flex flex-column align-items-center justify-content-center py-5 text-center px-3">
+            <i data-lucide="bell-off" style="width: 1.5rem; height: 1.5rem; color: var(--text-subtle);"></i>
+            <p class="text-muted small mb-0 mt-2">Belum ada notifikasi.</p>
+            <small class="text-muted" style="font-size: 0.7rem;">Notifikasi aktif akan muncul di sini.</small>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="p-2 border-top text-center bg-light rounded-bottom-3">
+          <small class="text-muted" style="font-size: 0.725rem;">Pusat Pemberitahuan WarungKu</small>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
